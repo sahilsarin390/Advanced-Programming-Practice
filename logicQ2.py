@@ -1,0 +1,10 @@
+from pyDatalog import pyDatalog
+pyDatalog.create_terms('bear,elephant,cat,small,big,brown,black,gray,dark,X,Y,Z')
++big('bear')
++big('elephant')
++small('cat')
++brown('bear')
++black('cat')
++gray('elephant')
+dark(X)<=brown(X) or black(X)
+print(big(X),dark(X))
